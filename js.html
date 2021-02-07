@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://shadykh.github.io/Html/">
+                        Home
+                    </a>
+                    </li>
+                <li> 
+                    <a href="https://mousasbbah.github.io/learnhtml/">
+                        Tables & Symbols 
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/default.asp">
+                        W3schools
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://www.google.com">
+                        Our Biggest Friend
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://github.com/shadykh">
+                        Shady GitHub
+                    </a> 
+                </li>
+                <li>
+                    <a href="https://github.com/MousaSbbah">
+                        Mousa GitHub
+                    </a> 
+                </li>
+                <li>
+                    <a href=js.html>
+                        js Game
+                    </a> 
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <script>
+            alert("Hi in this game")
+        </script>
+        <p style="font-size:30px;">Do you want to play a game?</p>
+
+        <button onclick="myFunction()">I'm here! Click me :) </button>
+
+        <p id="demo"></p>
+
+        <script>
+        function myFunction() {
+            var txt;
+            var r = confirm("Do you want to try the emoji");
+            if (r == true) {
+                 txt = "You pressed OK! So let us try";
+                } else {
+                 txt = "You pressed Cancel! So Bye Bye";
+                 }
+            document.getElementById("demo").innerHTML = txt;
+        }
+        </script>
+
+        <p style="font-size:30px;">To start a game you should enter a number from 1 to 9 and see your future</p>
+
+        <button onclick="myFunction2()">Try it</button>
+
+        <p id="demo2"></p>
+
+        <script>
+        function myFunction2() {
+            var luck = prompt("Please enter your emoji", "Try it");
+            if (luck == 1 ) {
+             document.getElementById("demo2").innerHTML = " You will be a Coder";
+            } else if (luck == 2) {
+                document.getElementById("demo2").innerHTML = " You will be a Driver";
+            } else if (luck == 3) {
+                document.getElementById("demo2").innerHTML = " You will be a Singer";
+            } else if (luck == 4) {
+                document.getElementById("demo2").innerHTML = " You will be a Thief";
+            } else if (luck == 5) {
+                document.getElementById("demo2").innerHTML = " You will be a Dancer";
+            } else if (luck == 6) {
+                document.getElementById("demo2").innerHTML = " You will be a Writer";
+            } else if (luck == 7) {
+                document.getElementById("demo2").innerHTML = " You will be a Chef";
+            } else if (luck == 8) {
+                document.getElementById("demo2").innerHTML = " You will be a Cashier";
+            } else if (luck == 9) {
+                document.getElementById("demo2").innerHTML = " You will be unfortunately an Engineer";
+            }
+        }
+        console.log("This is a game!")
+        </script>
+        <p style="font-size:30px;"></pstyle>
+            Try to change the color of the text!
+            write the color you want from this list as you see it:
+            <ul>
+                <li>red</li>
+                <li>green</li>
+                <li>blue</li>
+            </ul>
+        </p>
+
+        <button onclick="myFunction3()">Try it</button>
+        
+        <p id="demo3"></p>
+        
+        <script>
+        function myFunction3() {
+          var color = prompt("Please enter the color", "Try it");
+          if (color == "red") {
+            var result = color.fontcolor("red");
+            document.getElementById("demo3").innerHTML = result;
+          }else if (color == "green") {
+            var result = color.fontcolor("green");
+            document.getElementById("demo3").innerHTML = result;
+            }else if (color == "blue") {
+            var result = color.fontcolor("blue");
+            document.getElementById("demo3").innerHTML = result;
+            }
+
+        }
+        </script>
+    </main>
+
+    <footer>
+        &copy; LOL team: Shady and Mousa
+    </footer>
+</body>
+</html>
+
+
+
+
+
